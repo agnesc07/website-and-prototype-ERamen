@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="contact.css">
+    <title>Document</title>
+</head>
+<body>
+
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- ----------------------Header------------------------ -->
+    <section id="Home">
+        <nav>
+            <div Class="logo">
+                <img src="image/ramen kuning background.png">
+            </div>
+
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="product.html">Products</a></li>
+                <li><a href="promotion.html">Promotion</a></li>
+                <li><a href="about.html">About Us</a></li>
+            </ul>
+            <a href="contact.html" class="action_btn">Contact Us</a>
+            <div class="bars">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+
+
+            <!-- <div class="icon">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <i class="fa-regular fa-heart"></i>
+                <i class="fa-solid fa-cart-shopping"></i>
+
+            </div> -->
+        
+            <div class="dropdown">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="product.html">Products</a></li>
+                <li><a href="promotion.html">Promotion</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <a href="contact.html" class="action_btn">Contact Us</a>
+            </div>
+        </nav>
+        
+    </section>
+
+    <script>
+        const toggleBtn = document.querySelector('.bars')
+        const toggleBtnIcon = document.querySelector('.bars i')
+        const dropDownMenu = document.querySelector('.dropdown')
+
+        toggleBtn.onclick = function(){
+            dropDownMenu.classList.toggle('open')
+            const isOpen = dropDownMenu.classList.contains('open')
+
+            toggleBtnIcon.classList = isOpen
+            ? 'fa-regular fa-x'
+            : 'fa-solid fa-bars'
+        }
+    </script>
+
+    <!-- --------------------------------Contact US------------------------------------- -->
+
+    <div class="contact-us">
+        <div class="form">
+           <div>
+              <h1 class="main-color title">Contact Us</h1>
+           </div>
+           <div class="form-control">
+              <label for="fullname" class="main-color labels">Fullname</label><br>
+              <input type="text" placeholder="Min 5 Character" id="fullname" class="input-box">
+              <span class="focus-border"></span>
+           </div>
+           <div class="form-control">
+              <label for="email" class="main-color labels">Email Address</label><br>
+              <input type="email" placeholder="Example.name@gmail.com" id="email" class="input-box">
+              <span class="focus-border"></span>
+           </div>
+           <div class="form-control">
+              <label for="phone" class="main-color labels">Phone Number</label><br>
+              <input type="text" placeholder="ex 0822 ---- ---- " id="phone" class="input-box">
+              <span class="focus-border"></span>
+           </div>
+           <div class="form-control">
+              <div class="main-color labels">Choose your Ramen Preferences</div>
+              <div class="radio-group">
+                 <label for="ramen" class="main-color radio">
+                    <input type="radio" id="ramen" name="preferences" class="radio-size">
+                    Ramen
+                    <span></span>
+                 </label>
+                 <label for="dry-ramen" class="main-color radio">
+                    <input type="radio" id="dry-ramen" name="preferences" class="radio-size">
+                    Dry Ramen
+                    <span></span>
+                 </label>
+              </div>
+           </div>
+           <div class="form-control checkbox-wrapper">
+              <input type="checkbox" id="newspaper">
+              <label for="newspaper" class="main-color checkmark">
+                 Term and Conditions. 
+                 In order to receive the newsletter, the user is required to provide their consent and agree to receive it.
+              </label>
+              <span></span>
+           </div>
+           <button type="button" id="submit-button">Register</button>
+        </div>
+  
+        <div>
+           <img class="right" src="image/Miso_Chashu_Ramen-removebg-preview.png">
+        </div>
+     </div>
+
+     <!-- ---------------------------footer-------------------------------- -->
+
+    <footer class="footer">
+      <div class="footer-left">
+          <h3>Payment Method</h3>
+          <div class="credit-cards">
+              <img src="image/logo_bca-removebg-preview.png" alt="">
+              <img src="image/logo_gopay-removebg-preview.png" alt="">
+              <img src="image/logo_shopee-removebg-preview.png" alt="">
+
+          </div>
+          <p class="footer-copyright">@2023, Agnes Calista - (HTML CSS JS) ERamen</p>
+      </div>
+
+      <div class="footer-center">
+          <div>
+              <i class="fa fa-map-marker"></i>
+              <p><span>Indonesia</span> Jawa Barat, Bekasi</p>
+          </div>
+          <div>
+              <i class="fa fa-phone"></i>
+              <p>0811223344</p>
+          </div>
+
+          <div>
+              <i class="fa fa-envelope"></i>
+              <p><a href="#">Customer.service@gmail.com</a></p>
+          </div>
+      </div>
+      <div class="footer-right">
+          <p class="footer-about">
+              <span>About</span>
+            Enjoy the best ramen with our Ramen Online products. 
+            Authentic ramen with a modern twist, quality ingredients 
+            and a variety of flavours. Order now for direct delivery to 
+            your home.
+          </p>
+          <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+          <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+      
+          <script src="https://kit.fontawesome.com/81e417add5.js" crossorigin="anonymous"></script>
+
+          <div class="footer-media">
+              <a href="https://www.youtube.com/"><i class="fa-brands fa-youtube"></i></a>
+              <a href="https://www.instagram.com/"><i class="fa fa-instagram"></i></a>
+              <a href="https://twitter.com/?lang=en-id"><i class="fa fa-twitter"></i></a>
+              <a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a>
+              <a href="https://www.linkedin.com/"><i class="fa fa-linkedin"></i></a>
+          </div>
+      </div>
+  </footer>
+</body>
+
+<script src="contact.js"></script>
+</html>

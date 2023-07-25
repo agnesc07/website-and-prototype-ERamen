@@ -1,0 +1,281 @@
+<!-- Agnes Calista - 2501980690 -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ERamen-Shop</title>
+    <link rel="stylesheet" href="style.css">
+  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+</head>
+<body>
+
+  <!-- =====================================================HOME================================================ -->
+    <section id="Home">
+        <nav>
+            <div Class="logo">
+                <img src="image/ramen kuning background.png">
+            </div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="product.html">Products</a></li>
+                <li><a href="promotion.html">Promotion</a></li>
+                <li><a href="about.html">About Us</a></li>
+            </ul>
+            <a href="contact.html" class="action_btn">Contact Us</a>
+            <div class="bars">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+
+        
+            <div class="dropdown">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="product.html">Products</a></li>
+                <li><a href="promotion.html">Promotion</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <a href="contact.html" class="action_btn">Contact Us</a>
+            </div>
+        </nav>
+        
+    </section>
+
+    <script>
+        const toggleBtn = document.querySelector('.bars')
+        const toggleBtnIcon = document.querySelector('.bars i')
+        const dropDownMenu = document.querySelector('.dropdown')
+
+        toggleBtn.onclick = function(){
+            dropDownMenu.classList.toggle('open')
+            const isOpen = dropDownMenu.classList.contains('open')
+
+            toggleBtnIcon.classList = isOpen
+            ? 'fa-regular fa-x'
+            : 'fa-solid fa-bars'
+        }
+    </script>
+
+    <!-- ============================================================tampilan utama  -============================================================================-->
+
+    <section class="home" aria-label="Newest-Photo">
+
+        <div class="carousel" data-carousel>
+            <button class="carousel-button prev" data-carousel-button="prev">&#171;</button>
+            <button class="carousel-button next" data-carousel-button="next">&#187;</button>
+            <ul data-slides>
+                <li class="slide" data-active>
+                    <img src="image/Home/banner/4.png" alt="">
+                    <div class="content">
+                      <h1>Your Food Is in Here </h1>
+                      <div class="search-form">
+                        <input type="text" placeholder="&#128269; What are you looking for today?">
+                        <button>Search Ramen</button>
+                      </div>
+                      <button class="shop-btn btn-light"><a href="contact.html">Order Now</a></button>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+
+    <!-- ==========================================our images====================================================-->
+
+<section class="speciality" id="speciality">
+  <h1 class="heading"> <span> Our Images </span> </h1>
+  <div class="box-container">
+      <div class="box">
+          <img src="image/Home/speciality/bumbu.jpg" alt="">
+          <div class="info">
+              <h3>Seasoning</h3>
+              <a href="about.html"><button class="btn"> Read More </button></a>
+          </div>
+      </div>
+  
+      <div class="box">
+          <img src="image/Home/speciality/chef(2).jpg" alt="">
+          <div class="info">
+              <h3>
+                Experienced</h3>
+              <a href="#"><button class="btn"> Read More </button></a>
+          </div>
+      </div>
+  
+      <div class="box">
+          <img src="image/Home/speciality/3.jpg" alt="">
+          <div class="info">
+              <h3>Fresh Food</h3>
+              <a href="#"><button class="btn"> Read More </button></a>
+          </div>
+      </div>
+  
+      <div class="box">
+          <img src="image/Home/speciality/4.jpg" alt="">
+          <div class="info">
+              <h3>
+                Equipment Hygiene</h3>
+              <a href="#"><button class="btn"> Read More </button></a>
+          </div>
+      </div>
+  </div>
+  </section>
+  
+
+<!-- -===================================IMAGE New Ramen=================================== -->
+
+<div class="imgclass">
+  <div class="imgphotos">
+      <img src="image/about/newramen.png" alt="">
+  </div>
+</div>
+
+    <!-- ==========================================event-=============================================== -->
+
+    <section class="event">
+        <div class="tag3">
+          <h4>OUR EVENTS</h4>
+          <img src="images/title-separator.png" alt="">
+        </div>
+  
+        <div class="photo-eve">
+          <div class="photo-cont">
+            <div class="hero">
+              <div class="event-pic">
+                <div class="all-img">
+                  <img src="image/Home/event/training.jpg" alt="">
+                </div>
+                <div class="caption">
+                  <h2>TRAINING</h2>
+                </div>
+              </div>
+  
+              <div class="event-pic">
+                <div class="all-img">
+                  <img src="image/home/event/decore.jpg" alt="">
+                </div>
+                <div class="caption">
+                  <h2>Decorate Promo</h2>
+                </div>
+              </div>
+  
+              <div class="event-pic">
+                <div class="all-img">
+                  <img src="image/Home/event/make drink.jpg" alt="">
+                </div>
+                <div class="caption">
+                  <h2>Make Drink</h2>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ---------------------explore more------------------------------- -->
+
+<div class="exp-btn">
+  <button class="explore" >EXPLORE MORE
+    <i class="uil uil-arrow-right"  href="about.html"></i>
+  </button>
+</div>
+
+
+    <!--------------------- tujuan---------------------- -->
+
+    <section class="container">
+        <div class="tag">
+          <h3>TASTE THE Sensation</h3>
+          <img src="images/title-separator.png" alt="">
+        </div>
+  
+        <div class="pic-group">
+          <div class="item-pic">
+            <img src="image/Home/mie2-removebg-preview.png" alt="">
+            <div class="des">
+              <h2>Mie</h3>
+            </div>
+          </div>
+  
+          <div class="item-pic">
+            <img src="image/Home/kuah-removebg-preview.png" alt="">
+            <div class="des">
+              <h2>BEST SEASONING</h3>
+            </div>
+          </div>
+  
+          <div class="item-pic">
+            <img src="image/Home/chef2-removebg-preview.png" alt="">
+            <div class="des">
+              <h2>BEST CHEF</h3>
+            </div>
+          </div>
+  
+          <div class="item-pic">
+            <img src="image/Home/restaurant-removebg-preview.png" alt="">
+            <div class="des">
+              <h2>COMFORTABLE RESTAURANT</h3>
+            </div>
+          </div>
+        </div>
+        <div class="tag-desc">
+        </div>
+  
+      </section>
+<!-- ---------------------footer---------------------------------------- -->
+
+    <footer class="footer">
+        <div class="footer-left">
+            <h3>Payment Method</h3>
+            <div class="credit-cards">
+                <img src="image/logo_bca-removebg-preview.png" alt="">
+                <img src="image/logo_gopay-removebg-preview.png" alt="">
+                <img src="image/logo_shopee-removebg-preview.png" alt="">
+
+            </div>
+            <p class="footer-copyright">@2023, Agnes Calista - (HTML CSS JS) ERamen</p>
+        </div>
+
+        <div class="footer-center">
+            <div>
+                <i class="fa fa-map-marker"></i>
+                <p><span>Indonesia</span> Jawa Barat, Bekasi</p>
+            </div>
+            <div>
+                <i class="fa fa-phone"></i>
+                <p>0811223344</p>
+            </div>
+
+            <div>
+                <i class="fa fa-envelope"></i>
+                <p><a href="#">Customer.service@gmail.com</a></p>
+            </div>
+        </div>
+
+        <div class="footer-right">
+            <p class="footer-about">
+                <span>About</span>
+                Enjoy the best ramen with our Ramen Online products. 
+                Authentic ramen with a modern twist, quality ingredients 
+                and a variety of flavours. Order now for direct delivery to your home.
+            </p>
+
+            <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+            <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+        
+            <script src="https://kit.fontawesome.com/81e417add5.js" crossorigin="anonymous"></script>
+
+            <div class="footer-media">
+                <a href="https://www.youtube.com/"><i class="fa-brands fa-youtube"></i></a>
+                <a href="https://www.instagram.com/"><i class="fa fa-instagram"></i></a>
+                <a href="https://twitter.com/?lang=en-id"><i class="fa fa-twitter"></i></a>
+                <a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a>
+                <a href="https://www.linkedin.com/"><i class="fa fa-linkedin"></i></a>
+            </div>
+        </div>
+    </footer>
+</body>
+<script src="script.js"></script>
+</html>
